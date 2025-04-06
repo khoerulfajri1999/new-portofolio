@@ -68,8 +68,11 @@ const Banner = () => {
                 <button className="btn btn-lg">Contact me</button>
               </Link>
 
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <a
+                href="https://drive.google.com/file/d/1yfC6lWuzm5_JHURbrbIuj-Wamm3m6IT4/view?usp=sharing"
+                className="text-gradient btn-link"
+              >
+                My Resume
               </a>
             </motion.div>
             <motion.div
