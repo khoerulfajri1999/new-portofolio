@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/porto1.png";
 import Img2 from "../assets/porto2.png";
 import Img3 from "../assets/porto3.png";
+import Img4 from '../assets/porto4.png';
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -11,27 +12,59 @@ const Work = () => {
   const projects = [
     {
       img: Img1,
-      type: "Mobile App",
-      title: "Chatting App",
-      links: [{ label: "Mobile", url: "https://github.com/khoerulfajri1999/chatApp" }],
+      type: 'Mobile App',
+      title: 'Chatting App',
+      links: [
+        { label: 'Mobile', url: 'https://github.com/khoerulfajri1999/chatApp' },
+      ],
     },
     {
       img: Img2,
-      type: "Mobile and Web App",
-      title: "Bantu-In (Volunteering App)",
+      type: 'Mobile and Web App',
+      title: 'Bantu-In (Volunteering App)',
       links: [
-        { label: "Mobile", url: "https://github.com/khoerulfajri1999/bantuin-mobile" },
-        { label: "Frontend", url: "https://github.com/khoerulfajri1999/bantuin-frontend" },
-        { label: "Backend", url: "https://github.com/khoerulfajri1999/bantuin-backend " },
+        {
+          label: 'Mobile',
+          url: 'https://github.com/khoerulfajri1999/bantuin-mobile',
+        },
+        {
+          label: 'Frontend',
+          url: 'https://github.com/khoerulfajri1999/bantuin-frontend',
+        },
+        {
+          label: 'Backend',
+          url: 'https://github.com/khoerulfajri1999/bantuin-backend ',
+        },
       ],
     },
     {
       img: Img3,
-      type: "Web App",
-      title: "E-Commerce",
+      type: 'Web App',
+      title: 'E-Commerce',
       links: [
-        { label: "Frontend", url: "https://github.com/khoerulfajri1999/ecommerce-frontend" },
-        { label: "Backend", url: "https://github.com/khoerulfajri1999/ecommerce-backend" },
+        {
+          label: 'Frontend',
+          url: 'https://github.com/khoerulfajri1999/ecommerce-frontend',
+        },
+        {
+          label: 'Backend',
+          url: 'https://github.com/khoerulfajri1999/ecommerce-backend',
+        },
+      ],
+    },
+    {
+      img: Img4,
+      type: 'Mobile App',
+      title: 'Toko Tsunny',
+      links: [
+        {
+          label: 'Mobile',
+          url: 'https://github.com/khoerulfajri1999/toko-tsunny-mobile',
+        },
+        {
+          label: 'Backend',
+          url: 'https://github.com/khoerulfajri1999/toko-tsunny-backend',
+        },
       ],
     },
   ];
