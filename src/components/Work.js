@@ -5,6 +5,7 @@ import Img1 from "../assets/porto1.png";
 import Img2 from "../assets/porto2.png";
 import Img3 from "../assets/porto3.png";
 import Img4 from '../assets/porto4.png';
+import Img5 from '../assets/porto5.png';
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -65,6 +66,17 @@ const Work = () => {
           label: 'Backend',
           url: 'https://github.com/khoerulfajri1999/toko-tsunny-backend',
         },
+      ],
+    },
+        {
+      img: Img5,
+      type: 'Web App',
+      title: 'Pure',
+      links: [
+        {
+          label: 'Github',
+          url: 'https://github.com/khoerulfajri1999/pure-POS',
+        }
       ],
     },
   ];
@@ -194,6 +206,23 @@ const Work = () => {
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3xl text-white">{projects[2].title}</span>
+              </div>
+            </div>
+            <div
+              className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer"
+              onClick={() => setSelectedProject(projects[4])}
+            >
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <img
+                className="group-hover:scale-125 transition-all duration-500"
+                src={Img5}
+                alt=""
+              />
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <span className="text-gradient">{projects[4].type}</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="text-3xl text-white">{projects[4].title}</span>
               </div>
             </div>
           </motion.div>
