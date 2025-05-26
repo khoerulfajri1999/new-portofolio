@@ -6,6 +6,7 @@ import Img2 from "../assets/porto2.png";
 import Img3 from "../assets/porto3.png";
 import Img4 from '../assets/porto4.png';
 import Img5 from '../assets/porto5.png';
+import Img6 from '../assets/porto6.png';
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -79,6 +80,21 @@ const Work = () => {
         }
       ],
     },
+    {
+      img: Img6,
+      type: 'Web App',
+      title: 'My Event',
+      links: [
+        {
+          label: 'Frontend',
+          url: 'https://github.com/khoerulfajri1999/ticketing-frontend',
+        },
+        {
+          label: 'Backend',
+          url: 'https://github.com/khoerulfajri1999/ticketing-backend',
+        },
+      ],
+    },
   ];
 
   const popupVariants = {
@@ -131,6 +147,23 @@ const Work = () => {
                 This project is a project that I am working on, and I have also
                 participated in several bootcamps on various platforms.
               </p>
+            </div>
+            <div
+              className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer"
+              onClick={() => setSelectedProject(projects[5])}
+            >
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <img
+                className="group-hover:scale-125 transition-all duration-500"
+                src={Img6}
+                alt=""
+              />
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <span className="text-gradient">{projects[5].type}</span>
+              </div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="text-3xl text-white">{projects[5].title}</span>
+              </div>
             </div>
             <div
               className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer"
